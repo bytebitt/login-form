@@ -140,10 +140,13 @@ input::placeholder {
         width: 90%;
         padding: 1.5rem;
         height: auto;
+        backdrop-filter: none;
     }
 
     .login__forms input,
     .login__button {
         width: 100%;
+        background: rgba(255, 255, 255, 0.3);    
     }
 }
+
