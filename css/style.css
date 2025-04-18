@@ -1,0 +1,149 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+  }
+  *,*:before,*:after{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  :focus,:active{outline: none;}
+  a:focus,a:active{outline: none;}
+  nav,footer,header,aside{display: block;}
+  html,body{
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    background: linear-gradient(to right, #7d1bd8, #b41bd2);
+    font-family: 'Poppins', sans-serif;
+}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+.login {
+    display: flex;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);         
+    -webkit-backdrop-filter: blur(10px); 
+    border: 1px solid rgba(255, 255, 255, 0.2); 
+    padding: 2rem;
+    width: 500px;
+    height: 600px; 
+    margin: 0 auto;
+    margin-top: 100px;
+    border-radius: 18px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+}
+
+.login__title {
+    font-size: 50px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 50px;
+    color: white;
+}
+
+.login__forms {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    gap: 20px;
+}
+
+.login__forms input{
+    background: rgba(255, 255, 255, 0.011);
+    backdrop-filter: blur(10px);         
+    -webkit-backdrop-filter: blur(10px); 
+    border: 1px solid rgba(255, 255, 255, 0.094);
+    height: 50px;
+    width: 350px;
+    border-radius: 5px;
+    
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.678);
+    padding: 0 20px;
+}
+
+.login__forms input:focus {
+    box-shadow: 1px 1px 20px 1px #bb00ff;
+}
+
+.login__forgot {
+    margin-top: 20px;
+}
+
+.login__forgot a:hover {
+    font-weight: 500;
+}
+
+.login__forgot a{
+    color: white;
+}
+
+.login__button {
+    background: rgba(255, 255, 255, 0.161);
+    backdrop-filter: blur(10px);         
+    -webkit-backdrop-filter: blur(10px); 
+    border: 1px solid rgba(255, 255, 255, 0.266);
+    width: 350px;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.login__button:hover {
+    background: rgba(255, 255, 255, 0.362);
+    backdrop-filter: blur(10px);         
+    -webkit-backdrop-filter: blur(10px);
+    transition-duration: 0.5s; 
+}
+
+.login__button a {
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.login__signup {
+    margin-top: 20px;
+}
+
+.login__signup a {
+    color: white;
+}
+
+.login__signup a:hover {
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .login {
+        width: 90%;
+        padding: 1.5rem;
+        height: auto;
+    }
+
+    .login__forms input,
+    .login__button {
+        width: 100%;
+    }
+}
